@@ -1,0 +1,17 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.accordionviews">
+
+ <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+    name="accordion-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".accordion_view.AccordionView"
+    template="accordion_view.pt"
+    permission="zope2.View"
+    />
+
+</configure>
