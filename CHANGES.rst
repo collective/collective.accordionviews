@@ -5,7 +5,8 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add nested folders accordion view
+  [MrTango]
 
 
 1.0b1 (2022-09-14)

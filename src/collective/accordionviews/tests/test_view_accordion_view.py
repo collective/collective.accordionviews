@@ -4,7 +4,7 @@ import unittest
 from plone import api
 from plone.app.testing import TEST_USER_ID, setRoles
 from zope.component import getMultiAdapter
-from zope.component.interfaces import ComponentLookupError
+from zope.interface.interfaces import ComponentLookupError
 
 from collective.accordionviews.testing import (
     COLLECTIVE_ACCORDIONVIEWS_FUNCTIONAL_TESTING,

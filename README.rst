@@ -37,6 +37,7 @@ Features
 --------
 
 - Bootstrap based accordion view for Folder and Collection
+- Nested folders accordion view for Folder
 
 Translations
 ------------

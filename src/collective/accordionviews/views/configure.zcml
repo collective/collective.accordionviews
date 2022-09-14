@@ -4,11 +4,23 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="collective.accordionviews">
 
- <!-- -*- extra stuff goes here -*- -->
+  <!-- -*- extra stuff goes here -*- -->
 
   <browser:page
-    name="accordion-folders-view"
+    name="accordion_folders_view"
     for="Products.CMFCore.interfaces.IFolderish"
+    menu="plone_displayviews"
+    title="Accordion Folders"
+    class=".accordion_folders_view.AccordionFoldersView"
+    template="accordion_folders_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="accordion_folders_view"
+    for="plone.app.contenttypes.interfaces.ICollection"
+    menu="plone_displayviews"
+    title="Accordion Folders"
     class=".accordion_folders_view.AccordionFoldersView"
     template="accordion_folders_view.pt"
     permission="zope2.View"
