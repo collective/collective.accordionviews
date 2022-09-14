@@ -36,28 +36,15 @@ Accordion views for Plone CMS, which can be used on Folders and Collections.
 Features
 --------
 
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
+- Bootstrap based accordion view for Folder and Collection
 
 Translations
 ------------
 
 This product has been translated into
 
-- Klingon (thanks, K'Plai)
+- English
+- German
 
 
 Installation
@@ -79,7 +66,7 @@ and then running ``bin/buildout``
 Authors
 -------
 
-Provided by awesome people ;)
+Provided by `Derico <https://derico.de>`_
 
 
 Contributors
@@ -87,6 +74,7 @@ Contributors
 
 Put your name here, you deserve it!
 
+- MrTango
 - ?
 
 
@@ -95,14 +83,12 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/collective.accordionviews/issues
 - Source Code: https://github.com/collective/collective.accordionviews
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+If you are having issues, please let us know, by opening an issue.
 
 
 License
