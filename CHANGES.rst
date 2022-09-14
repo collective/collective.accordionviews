@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.0a1 (unreleased)
+1.0b1 (unreleased)
 ------------------
 
-- Initial release.
+- Initial release with first accordion_view.
   [MrTango]
