@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 # from collective.accordionviews import _
-from plone.app.contentlisting.interfaces import IContentListing
 # from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from bs4 import BeautifulSoup
+from plone.app.contentlisting.interfaces import IContentListing
 from plone.app.layout.globals.interfaces import IViewView
 from Products.Five.browser import BrowserView
 from zope.component import getMultiAdapter
@@ -11,7 +11,6 @@ from zope.interface import Interface, alsoProvides
 
 
 class AccordionView(BrowserView):
-
     def __call__(self):
         return self.index()
 

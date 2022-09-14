@@ -7,6 +7,14 @@
  <!-- -*- extra stuff goes here -*- -->
 
   <browser:page
+    name="accordion-folders-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".accordion_folders_view.AccordionFoldersView"
+    template="accordion_folders_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
     name="accordion_view"
     for="Products.CMFCore.interfaces.IFolderish"
     menu="plone_displayviews"
