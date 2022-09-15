@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1b2 (unreleased)
+1.1b2 (2022-09-15)
 ------------------
 
 - Resolve default_page if items are folder
