@@ -7,9 +7,9 @@
   <body>
     <metal:content-core fill-slot="content-core">
       <metal:block define-macro="content-core">
-        <div class="accordion" id="accordion-${python: context.UID()}">
-          <div
-            tal:repeat="item python:context.restrictedTraverse('@@contentlisting')(exclude_from_nav=False)"
+        <div class="accordion"
+          id="accordion-${python: context.UID()}">
+          <div tal:repeat="item python:context.restrictedTraverse('@@contentlisting')(exclude_from_nav=False)"
             class="accordion-item">
             <h2 class="accordion-header"
               id="heading-${python: item.uuid()}">
@@ -26,8 +26,10 @@
               class="accordion-collapse collapse ${python: repeat.item.start and 'show' or 'collapsed'}"
               aria-labelledby="heading-${python: item.uuid()}"
               data-bs-parent="#accordion-${python: context.UID()}">
-              <div class="accordion-body"
-                tal:content="structure python:view.render_item(item)">
+              <div class="accordion-body">
+                <p class="fw-bolder"
+                  tal:content="item/Description" />
+                <div tal:replace="structure python:view.render_item(item)" />
               </div>
             </div>
           </div>
