@@ -13,9 +13,9 @@
             id="folder-heading-${python: folder.uuid()}">${folder/Title}</h2>
           <p tal:content="folder/Description"></p>
 
-          <div class="accordion my-3"
+          <div class="accordion mt-3 mb-4"
             id="accordion-${python: folder.uuid()}">
-            <div tal:repeat="item python:folder.getObject().restrictedTraverse('@@contentlisting')(portal_type=['Document', 'News Item', 'Event'],exclude_from_nav=False)"
+            <div tal:repeat="item python:folder.getObject().restrictedTraverse('@@contentlisting')(portal_type=['Document', 'News Item', 'Event', 'Folder'],exclude_from_nav=False)"
               class="accordion-item">
               <h3 class="accordion-header"
                 id="heading-${python: item.uuid()}">

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 # from collective.accordionviews import _
-# from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from bs4 import BeautifulSoup
 from plone.app.contentlisting.interfaces import IContentListing
 from plone.app.layout.globals.interfaces import IViewView
@@ -16,6 +15,9 @@ class AccordionView(BrowserView):
 
     def render_item(self, item):
         ctx = item.getObject()
+        default_page = getattr(ctx.aq_explicit, "default_page", None)
+        if default_page:
+            ctx = ctx.restrictedTraverse(default_page)
         # without this a leadimage viewlet will not be rendered!
         self.request.set("URL", ctx.absolute_url())
         self.request.set("ACTUAL_URL", ctx.absolute_url())

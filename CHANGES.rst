@@ -5,7 +5,8 @@ Changelog
 1.1b2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Resolve default_page if items are folder
+  [MrTango]
 
 
 1.1b1 (2022-09-15)
