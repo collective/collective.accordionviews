@@ -7,6 +7,15 @@
   <!-- -*- extra stuff goes here -*- -->
 
   <browser:page
+    name="tabbed_view"
+    for="plone.app.contenttypes.interfaces.IFolder"
+    class=".tabbed_view.TabbedView"
+    template="tabbed_view.pt"
+    permission="zope2.View"
+    layer="collective.accordionviews.interfaces.ICollectiveAccordionviewsLayer"
+    />
+
+  <browser:page
     name="accordion_folders_view"
     for="Products.CMFCore.interfaces.IFolderish"
     menu="plone_displayviews"
