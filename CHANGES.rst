@@ -5,7 +5,8 @@ Changelog
 1.1b3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add tabbed_view
+  [MrTango]
 
 
 1.1b2 (2022-09-15)
