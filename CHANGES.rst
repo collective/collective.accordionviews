@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1b3 (unreleased)
+1.1b3 (2022-09-28)
 ------------------
 
 - Add tabbed_view
