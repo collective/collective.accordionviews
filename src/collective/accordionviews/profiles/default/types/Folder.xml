@@ -3,6 +3,7 @@
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
  <property name="default_view">listing_view</property>
  <property name="view_methods" purge="false">
+  <element value="tabbed_view"/>
   <element value="accordion_view"/>
   <element value="accordion_folders_view"/>
  </property>

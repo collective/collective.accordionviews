@@ -9,6 +9,8 @@
   <browser:page
     name="tabbed_view"
     for="plone.app.contenttypes.interfaces.IFolder"
+    menu="plone_displayviews"
+    title="Tabbed"
     class=".tabbed_view.TabbedView"
     template="tabbed_view.pt"
     permission="zope2.View"
