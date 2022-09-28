@@ -17,19 +17,17 @@
               id="nav-link-${item/uuid}"
               class="nav-link ${python: is_active and 'active' or ''}"
               aria-current="${python: is_active and 'page' or 'false'}"
-              data-bs-toggle="collapse"
               data-bs-target="#tab-content-${item/uuid}"
               href="${context_state/current_base_url}?tabid=nav-link-${item/uuid}">${item/Title}</a>
           </li>
         </ul>
-        <div class="tab-content collapse"
+        <div class="tab-content"
           id="tab-content-${item/uuid}"
           tal:repeat="item python:view.results"
-          tal:content="structure python:view.render_item(item)"
-          data-bs-delay='{"show":0,"hide":0}'
-          data-bs-config='{"delay":0}'
-          data-bs-parent="#tab-contents"
-          >
+         >
+          <div tal:define="is_active python: view.tab_is_active(item, repeat.item.start)"
+            tal:condition="is_active"
+            tal:replace="structure python:view.render_item(item)" />
         </div>
       </div>
 
