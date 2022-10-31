@@ -2,6 +2,7 @@
 
 # from collective.accordionviews import _
 from urllib import request
+
 from bs4 import BeautifulSoup
 from plone import api
 from plone.app.layout.globals.interfaces import IViewView
@@ -27,8 +28,8 @@ class TabbedView(BrowserView):
         return results
 
     def tab_is_active(self, item, start):
-        tabid = 'nav-link-{}'.format(item.uuid())
-        current_tabid = self.request.get('tabid', None)
+        tabid = "nav-link-{}".format(item.uuid())
+        current_tabid = self.request.get("tabid", None)
         if not current_tabid and start:
             return True
         elif not current_tabid:

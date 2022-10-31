@@ -7,6 +7,15 @@
   <!-- -*- extra stuff goes here -*- -->
 
   <browser:page
+    name="slideshow-view"
+    for="plone.app.contenttypes.interfaces.IFolder"
+    class=".slides_view.SlidesView"
+    template="slides_view.pt"
+    permission="zope2.View"
+    layer="collective.accordionviews.interfaces.ICollectiveAccordionviewsLayer"
+    />
+
+  <browser:page
     name="tabbed_view"
     for="plone.app.contenttypes.interfaces.IFolder"
     menu="plone_displayviews"
