@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # from collective.accordionviews import _
+from plone import api
 from Products.Five.browser import BrowserView
 from zope.interface import Interface
 
@@ -12,10 +13,13 @@ class ISlidesView(Interface):
 
 
 class SlidesView(BrowserView):
-    # If you want to define a template here, please remove the template from
-    # the configure.zcml registration of this view.
-    # template = ViewPageTemplateFile('slides_view.pt')
-
     def __call__(self):
-        # Implement your own actions:
         return self.index()
+
+    @property
+    def results(self):
+        listing_view = api.content.get_view(
+            name="contentlisting", context=self.context, request=self.request
+        )
+        results = listing_view(portal_type="Image")
+        return results

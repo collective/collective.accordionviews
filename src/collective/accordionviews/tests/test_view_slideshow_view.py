@@ -24,9 +24,9 @@ class ViewsIntegrationTest(unittest.TestCase):
 
     def test_slideshow_view_is_registered(self):
         view = getMultiAdapter(
-            (self.portal["other-folder"], self.portal.REQUEST), name="slideshow-view"
+            (self.portal["other-folder"], self.portal.REQUEST), name="slideshow_view"
         )
-        self.assertTrue(view.__name__ == "slideshow-view")
+        self.assertTrue(view.__name__ == "slideshow_view")
         # self.assertTrue(
         #     'Sample View' in view(),
         #     'Sample View is not found in slideshow-view'
@@ -35,7 +35,7 @@ class ViewsIntegrationTest(unittest.TestCase):
     def test_slideshow_view_not_matching_interface(self):
         with self.assertRaises(ComponentLookupError):
             getMultiAdapter(
-                (self.portal["front-page"], self.portal.REQUEST), name="slideshow-view"
+                (self.portal["front-page"], self.portal.REQUEST), name="slideshow_view"
             )
 
 

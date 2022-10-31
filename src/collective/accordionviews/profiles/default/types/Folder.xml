@@ -6,5 +6,6 @@
   <element value="tabbed_view"/>
   <element value="accordion_view"/>
   <element value="accordion_folders_view"/>
+  <element value="slideshow_view"/>
  </property>
 </object>

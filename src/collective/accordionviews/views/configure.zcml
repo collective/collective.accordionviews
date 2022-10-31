@@ -7,8 +7,10 @@
   <!-- -*- extra stuff goes here -*- -->
 
   <browser:page
-    name="slideshow-view"
+    name="slideshow_view"
     for="plone.app.contenttypes.interfaces.IFolder"
+    menu="plone_displayviews"
+    title="Slideshow"
     class=".slides_view.SlidesView"
     template="slides_view.pt"
     permission="zope2.View"
