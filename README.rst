@@ -32,12 +32,16 @@ collective.accordionviews
 =========================
 
 Accordion views for Plone CMS, which can be used on Folders and Collections.
+This add can be a replacement from redomino.tabsandslides.
 
 Features
 --------
 
 - Bootstrap based accordion view for Folder and Collection
 - Nested folders accordion view for Folder
+- Tabbed view for folders
+- Slides view for folders and collections
+
 
 Translations
 ------------
