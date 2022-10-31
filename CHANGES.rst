@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1b4 (unreleased)
+1.1b4 (2022-10-31)
 ------------------
 
 - Add slideshow_view for Folder
