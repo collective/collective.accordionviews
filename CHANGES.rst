@@ -5,7 +5,8 @@ Changelog
 1.1b4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add slideshow_view for Folder
+  [MrTango]
 
 
 1.1b3 (2022-09-28)

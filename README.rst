@@ -40,7 +40,7 @@ Features
 - Bootstrap based accordion view for Folder and Collection
 - Nested folders accordion view for Folder
 - Tabbed view for folders
-- Slides view for folders and collections
+- Slides view for folders
 
 
 Translations
