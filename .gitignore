@@ -38,4 +38,5 @@ reports/
 venv/
 # excludes
 /.python-version
-__pycache__
+__pycache__/*
+**/__pycache__/
