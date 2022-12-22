@@ -13,7 +13,7 @@
             class="accordion-item">
             <h2 class="accordion-header"
               id="heading-${python: item.uuid()}">
-              <button class="accordion-button ${python: repeat.item.start and 'collapsed' or ''}"
+              <button class="accordion-button ${python: repeat.item.start and 'first' or 'collapsed'}"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapse-${python: item.uuid()}"
