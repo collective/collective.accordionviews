@@ -5,7 +5,8 @@ Changelog
 1.1b5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- fix accordion collapsed markers
+  [MrTango]
 
 
 1.1b4 (2022-10-31)
