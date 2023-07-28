@@ -5,7 +5,8 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- prevent error when #content-core was not found in clean_html method
+  [MrTango]
 
 
 1.1 (2022-12-22)
