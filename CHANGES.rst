@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2 (unreleased)
+1.2 (2023-07-28)
 ----------------
 
 - prevent error when #content-core was not found in clean_html method
