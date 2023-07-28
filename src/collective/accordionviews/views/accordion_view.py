@@ -30,4 +30,6 @@ class AccordionView(BrowserView):
     def _clean_html(self, raw_html):
         content_soup = BeautifulSoup(raw_html, "html.parser")
         content = content_soup.select_one("#content-core")
+        if not content:
+            return raw_html
         return content.prettify()
