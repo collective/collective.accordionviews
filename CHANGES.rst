@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4 (unreleased)
+1.4 (2023-10-31)
 ----------------
 
 - respect excludeFromNavigation in accordion_view
