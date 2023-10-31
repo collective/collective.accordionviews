@@ -5,7 +5,8 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Improve handling of link items in accordion_view
+  [MrTango]
 
 
 1.2 (2023-07-28)
