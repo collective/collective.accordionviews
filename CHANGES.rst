@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.3 (unreleased)
+1.3 (2023-10-31)
 ----------------
 
 - Improve handling of link items in accordion_view
