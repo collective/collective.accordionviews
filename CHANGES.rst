@@ -5,7 +5,8 @@ Changelog
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- respect excludeFromNavigation in accordion_view
+  [MrTango]
 
 
 1.3 (2023-10-31)
