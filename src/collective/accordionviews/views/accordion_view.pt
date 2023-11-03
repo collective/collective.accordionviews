@@ -9,9 +9,9 @@
       <metal:block define-macro="content-core">
         <div class="accordion"
           id="accordion-${python: context.UID()}">
-          <div tal:repeat="item python:context.restrictedTraverse('@@contentlisting')()"
-              class="accordion-item">
-            <metal:block tal:condition="python: item.isVisibleInNav()">
+          <metal:items tal:repeat="item python:context.restrictedTraverse('@@contentlisting')()">
+            <div class="accordion-item"
+              tal:condition="python: item.isVisibleInNav()">
               <h2 class="accordion-header"
                 tal:condition="python: item.Type() != 'Link'"
                 id="heading-${python: item.uuid()}">
@@ -41,8 +41,8 @@
                   <div tal:replace="structure python:view.render_item(item)" />
                 </div>
               </div>
-            </metal:block>
-          </div>
+            </div>
+          </metal:items>
         </div>
       </metal:block>
     </metal:content-core>

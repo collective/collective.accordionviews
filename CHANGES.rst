@@ -5,7 +5,8 @@ Changelog
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- avoid empty accordion-items div's when items are excluded from navigation
+  [MrTango]
 
 
 1.4 (2023-10-31)
