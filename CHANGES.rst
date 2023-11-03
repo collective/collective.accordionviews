@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.5 (unreleased)
+1.5 (2023-11-03)
 ----------------
 
 - avoid empty accordion-items div's when items are excluded from navigation
