@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.6 (unreleased)
+1.6 (2023-11-17)
 ----------------
 
 - Also render viewlet-above and below content in accordion.
