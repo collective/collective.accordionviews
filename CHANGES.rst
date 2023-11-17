@@ -2,6 +2,13 @@ Changelog
 =========
 
 
+1.6 (unreleased)
+----------------
+
+- Also render viewlet-above and below content in accordion.
+  [MrTango]
+
+
 1.5 (2023-11-03)
 ----------------
 

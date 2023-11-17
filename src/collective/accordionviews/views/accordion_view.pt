@@ -38,7 +38,9 @@
                 <div class="accordion-body">
                   <p class="fw-bolder"
                     tal:content="item/Description" />
-                  <div tal:replace="structure python:view.render_item(item)" />
+                  <div tal:replace="structure python:view.render_above_content(item)" />
+                  <div tal:replace="structure python:view.render_content_core(item)" />
+                  <div tal:replace="structure python:view.render_below_content(item)" />
                 </div>
               </div>
             </div>
