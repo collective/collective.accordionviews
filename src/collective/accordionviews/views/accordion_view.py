@@ -4,18 +4,26 @@
 # from plone.app.contentlisting.interfaces import IContentListing
 from bs4 import BeautifulSoup
 from plone.app.layout.globals.interfaces import IViewView
-from plone.memoize import view
+from plone.memoize import ram
 from Products.Five.browser import BrowserView
 from zope.component import getMultiAdapter
 from zope.interface import alsoProvides
 from zope.interface import Interface
 
 
+def _render_details_cachekey(method, self, brain):
+    return (brain.getPath(), brain.modified)
+
+
+def _html_fragment_cachekey(method, self, fragment, html):
+    return (fragment, html,)
+
+
 class AccordionView(BrowserView):
     def __call__(self):
         return self.index()
 
-    @view.memoize
+    @ram.cache(_render_details_cachekey)
     def _get_item_view_html(self, item):
         ctx = item.getObject()
         default_page = getattr(ctx.aq_explicit, "default_page", None)
@@ -29,6 +37,7 @@ class AccordionView(BrowserView):
         alsoProvides(self.context_view, IViewView)
         return self.context_view()
 
+    @ram.cache(_html_fragment_cachekey)
     def _get_fragment(self, fragment, raw_html):
         content_soup = BeautifulSoup(raw_html, "html.parser")
         content = content_soup.select_one(fragment)

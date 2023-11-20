@@ -5,7 +5,8 @@ Changelog
 1.7 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Cache several methods in accordion view to improve performance
+  [MrTango]
 
 
 1.6 (2023-11-17)
