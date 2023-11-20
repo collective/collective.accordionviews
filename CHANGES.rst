@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.7 (unreleased)
+1.7 (2023-11-20)
 ----------------
 
 - Cache several methods in accordion view to improve performance
