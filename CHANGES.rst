@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.8 (unreleased)
+1.8 (2023-11-21)
 ----------------
 
 - add AccordionCollapsedView which keeps also the first item collapsed
