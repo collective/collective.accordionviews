@@ -20,6 +20,8 @@ def _html_fragment_cachekey(method, self, fragment, html):
 
 
 class AccordionView(BrowserView):
+    COLLAPSED = False
+
     def __call__(self):
         return self.index()
 
@@ -57,3 +59,8 @@ class AccordionView(BrowserView):
         html_str = self._get_item_view_html(item)
         fragment_html = self._get_fragment("#viewlet-below-content-body", html_str)
         return fragment_html
+
+
+class AccordionCollapsedView(AccordionView):
+    """ a collapsed version of the accordion view """
+    COLLAPSED = True

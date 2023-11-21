@@ -19,7 +19,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapse-${python: item.uuid()}"
-                  aria-expanded="${python: repeat.item.start and 'true' or 'false'}"
+                  aria-expanded="${python: repeat.item.start and not view.COLLAPSED and 'true' or 'false'}"
                   aria-controls="collapse-${python: item.uuid()}">
                 ${item/Title}
                 </button>

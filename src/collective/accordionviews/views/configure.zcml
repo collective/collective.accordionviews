@@ -68,4 +68,23 @@
     permission="zope2.View"
     />
 
+  <browser:page
+    name="accordion_collapsed_view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    menu="plone_displayviews"
+    title="Accordion Collapsed"
+    class=".accordion_view.AccordionCollapsedView"
+    template="accordion_view.pt"
+    permission="zope2.View"
+    />
+
+  <browser:page
+    name="accordion_collapsed_view"
+    for="plone.app.contenttypes.interfaces.ICollection"
+    menu="plone_displayviews"
+    title="Accordion Collapsed"
+    class=".accordion_view.AccordionCollapsedView"
+    template="accordion_view.pt"
+    permission="zope2.View"
+    />
 </configure>
