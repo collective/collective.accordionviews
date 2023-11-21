@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-09-14 18:09+0000\n"
+"POT-Creation-Date: 2023-11-21 10:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,16 +14,28 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.accordionviews\n"
 
-#: collective/accordionviews/views/configure.zcml:37
+#: collective/accordionviews/views/configure.zcml:59
 msgid "Accordion"
 msgstr "Akkordeon"
 
-#: collective/accordionviews/views/configure.zcml:17
+#: collective/accordionviews/views/configure.zcml:79
+msgid "Accordion Collapsed"
+msgstr "Akkordeon (geschlossen)"
+
+#: collective/accordionviews/views/configure.zcml:39
 msgid "Accordion Folders"
 msgstr "Akkordeon Ordner"
 
 #: collective/accordionviews/configure.zcml:27
 msgid "Installs the collective.accordionviews add-on."
+msgstr ""
+
+#: collective/accordionviews/views/configure.zcml:18
+msgid "Slideshow"
+msgstr ""
+
+#: collective/accordionviews/views/configure.zcml:29
+msgid "Tabbed"
 msgstr ""
 
 #: collective/accordionviews/configure.zcml:36

@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.accordionviews\n"
-"POT-Creation-Date: 2022-09-14 18:09+0000\n"
+"POT-Creation-Date: 2023-11-21 10:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Maik Derstappen <md@derico.de>\n"
 "Language-Team: LANGUAGE <md@derico.de>\n"
@@ -16,16 +16,28 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone\n"
 
-#: collective/accordionviews/views/configure.zcml:37
+#: collective/accordionviews/views/configure.zcml:59
 msgid "Accordion"
 msgstr ""
 
-#: collective/accordionviews/views/configure.zcml:17
+#: collective/accordionviews/views/configure.zcml:79
+msgid "Accordion Collapsed"
+msgstr ""
+
+#: collective/accordionviews/views/configure.zcml:39
 msgid "Accordion Folders"
 msgstr ""
 
 #: collective/accordionviews/configure.zcml:27
 msgid "Installs the collective.accordionviews add-on."
+msgstr ""
+
+#: collective/accordionviews/views/configure.zcml:18
+msgid "Slideshow"
+msgstr ""
+
+#: collective/accordionviews/views/configure.zcml:29
+msgid "Tabbed"
 msgstr ""
 
 #: collective/accordionviews/configure.zcml:36
