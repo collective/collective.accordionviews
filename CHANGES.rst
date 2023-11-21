@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.8.1 (unreleased)
-----------------
+1.8.1 (2023-11-21)
+------------------
 
 - improve german translations
   [MrTango]
