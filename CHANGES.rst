@@ -5,7 +5,8 @@ Changelog
 1.8 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- add AccordionCollapsedView which keeps also the first item collapsed
+  [MrTango]
 
 
 1.7 (2023-11-20)

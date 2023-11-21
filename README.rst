@@ -37,7 +37,9 @@ This add can be a replacement from redomino.tabsandslides.
 Features
 --------
 
-- Bootstrap based accordion view for Folder and Collection
+- Bootstrap based
+- Accordion view for Folder and Collection
+- Accordion collapsed view, which keeps all items collapsed
 - Nested folders accordion view for Folder
 - Tabbed view for folders
 - Slides view for folders

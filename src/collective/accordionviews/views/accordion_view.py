@@ -20,10 +20,13 @@ def _html_fragment_cachekey(method, self, fragment, html):
 
 
 class AccordionView(BrowserView):
-    COLLAPSED = False
 
     def __call__(self):
         return self.index()
+
+    @property
+    def all_collapsed(self):
+        return False
 
     @ram.cache(_render_details_cachekey)
     def _get_item_view_html(self, item):
@@ -63,4 +66,7 @@ class AccordionView(BrowserView):
 
 class AccordionCollapsedView(AccordionView):
     """ a collapsed version of the accordion view """
-    COLLAPSED = True
+
+    @property
+    def all_collapsed(self):
+        return True
